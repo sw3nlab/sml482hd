@@ -3,7 +3,7 @@
 (Процесс запуска Debian Wheezy на ТВ приставке SML482HD с загрузкой ядра и файловой системы по сети)
 
 ### Необходимые шаги:
-- **(1)** Поднять и настроить TFTP сервер и NFS сервер на Linux хосте или роутере (192.168.2.1).
+- **(1)** Поднять и настроить TFTP сервер и NFS сервер на Linux хосте или роутере (Для примера: 192.168.2.1).
 - **(2)** Загрузить ядро (zImage) и файловую систему (rootfs) на хост (192.168.2.1)
 - **(3)** Настроить загрузчик SML482HD (CFE) на загрузку ядра и файловой системы с хоста.
 
@@ -12,6 +12,11 @@
 https://github.com/ZubairLK/mkdebianrfs
 Собираем от root'a командой: 
 > sudo ./mkdebianrfs.sh wheezy mipsel wheezy-rootfs
+
+Собраную фс пакуем:
+> sudo tar -cvzf wheezy-roofs.tar.gz wheezy-rootfs
+
+и загружаем на NFS сервер (192.168.2.1)
 
 **(1)** Настройки TFTP сервера для роутера на базе OpenWRT/LEDE:
 https://github.com/alghanmi/openwrt_netgear-wndr3700/wiki/TFTP-Server-on-Your-OpenWRT-Router
