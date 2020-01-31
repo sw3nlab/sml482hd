@@ -11,7 +11,7 @@
 Для самостоятельной сборки файловой системы можно использовать bash скрипт из этого репозитория или официального:
 https://github.com/ZubairLK/mkdebianrfs
 Собираем от root'a командой: 
-> sudo ./mkdebianrfs.sh wheezy mipsel wheezy-rootfs
+> sudo ./mkdebianrfs.sh mipsel wheezy wheezy-rootfs
 
 Собраную фс пакуем:
 > sudo tar -cvzf wheezy-roofs.tar.gz wheezy-rootfs
