@@ -8,22 +8,21 @@
 - Настроить загрузчик SML482HD (CFE) на загрузку ядра и файловой системы с хоста.
 
 
-
-
-
-
-
 Для самостоятельной сборки файловой системы можно использовать bash скрипт.
 https://github.com/ZubairLK/mkdebianrfs
-
 
 
 1) Подключаемся к UART приставки и останавливаем загрузку:
 `CTRL+i`
 Проверяем переменную окружения `STARTUP` .
+
 `CFE> printenv`
+
 Заменяем старое значение: 
+
 `show_logo;cls;boot -z -elf nandflash0.kernel:||boot -z -elf nandflash0.backup_kernel:||boot -z -elf flash0.ro_kernel:||boot -z -elf 192.168.2.1:zImage` 
+
+
 на загрузку из сети:
 ```php
 CFE>setenv -p STARTUP "boot -z -elf 192.168.2.1:zImage"
