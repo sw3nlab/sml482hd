@@ -22,9 +22,9 @@ https://github.com/ZubairLK/mkdebianrfs
 `CTRL+i`
 Проверяем переменную окружения `STARTUP` .
 `CFE> printenv`
-Заменяем значение: 
-`STARTUP R/W  show_logo; cls; boot -z -elf nandflash0.kernel: || boot -z -elf nandflash0.backup_kernel: || boot -z -elf flash0.ro_kernel: || boot -z -elf 192.168.2.1:zImage` 
-на:
+Заменяем старое значение: 
+`show_logo;cls;boot -z -elf nandflash0.kernel:||boot -z -elf nandflash0.backup_kernel:||boot -z -elf flash0.ro_kernel:||boot -z -elf 192.168.2.1:zImage` 
+на загрузку из сети:
 ```php
 CFE>setenv -p STARTUP "boot -z -elf 192.168.2.1:zImage"
 CFE>reboot
