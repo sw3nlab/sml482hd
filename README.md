@@ -32,6 +32,7 @@ vi /etc/exports
 
 
 **(1.1)** Настройки TFTP сервера для роутера на базе OpenWRT/LEDE:
+
 https://github.com/alghanmi/openwrt_netgear-wndr3700/wiki/TFTP-Server-on-Your-OpenWRT-Router
 
 
