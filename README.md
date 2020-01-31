@@ -4,7 +4,7 @@
 
 ### Необходимые шаги:
 - **(1)** Поднять и настроить TFTP сервер и NFS сервер на Linux хосте или роутере (Для примера: 192.168.2.1).
-- **(2)** Загрузить ядро (zImage) и файловую систему (rootfs) на хост (192.168.2.1)
+- **(2)** Собрать файловую систему (rootfs) и зарузить вместе с ядром (zImage) на хост (192.168.2.1)
 - **(3)** Настроить загрузчик SML482HD (CFE) на загрузку ядра и файловой системы с хоста.
 
 
@@ -18,11 +18,7 @@ https://github.com/ZubairLK/mkdebianrfs
 
 и загружаем на NFS сервер (192.168.2.1)
 
-**(1)** Настройки TFTP сервера для роутера на базе OpenWRT/LEDE:
-https://github.com/alghanmi/openwrt_netgear-wndr3700/wiki/TFTP-Server-on-Your-OpenWRT-Router
-
-
-**(1.1)** Установка и настройка NFS сервера:
+**(1)** Установка и настройка NFS сервера:
 ```php
 opkg update
 opkg install nfs-kernel-server
@@ -30,6 +26,13 @@ vi /etc/exports
 
 /etc/init.d/nfs start
 ```
+проверить работоспособность NFS можно примонтировав свежезалитую rootfs к себе: 
+>mount -t nfs 192.168.2.1:/nfs/wheezy-rootfs/ /home
+
+
+**(1.1)** Настройки TFTP сервера для роутера на базе OpenWRT/LEDE:
+https://github.com/alghanmi/openwrt_netgear-wndr3700/wiki/TFTP-Server-on-Your-OpenWRT-Router
+
 
 **(3)** Подключаемся к UART приставки и останавливаем загрузку:
 `CTRL+i`
