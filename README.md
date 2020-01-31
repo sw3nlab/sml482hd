@@ -26,6 +26,9 @@ https://github.com/ZubairLK/mkdebianrfs
 на загрузку из сети:
 ```php
 CFE>setenv -p STARTUP "boot -z -elf 192.168.2.1:zImage"
+```
+Перезагружаем SML:
+```php
 CFE>reboot
-``` 
+```
 
