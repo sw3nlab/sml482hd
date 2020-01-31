@@ -36,7 +36,7 @@ vi /etc/exports
 https://github.com/alghanmi/openwrt_netgear-wndr3700/wiki/TFTP-Server-on-Your-OpenWRT-Router
 
 
-**(3)** Подключаемся к UART приставки и останавливаем загрузку:
+**(2)** Подключаемся к UART приставки и останавливаем загрузку:
 `CTRL+i`
 Проверяем переменную окружения `STARTUP` .
 
