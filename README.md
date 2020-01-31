@@ -1,4 +1,4 @@
-### NFS - Debian Wheezy boot proccess from OpenWRT/LEDE route.
+### NFS - Debian Wheezy boot proccess from OpenWRT/LEDE router.
 
 (Процесс запуска Debian Wheezy на ТВ приставке SML482HD с загрузкой ядра и файловой системы по сети)
 
