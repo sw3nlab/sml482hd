@@ -18,10 +18,13 @@ https://github.com/ZubairLK/mkdebianrfs
 
 
 
-1) Connect to UART and STOP boot proccess.
+1) Подключаемся к UART приставки и останавливаем загрузку:
 `CTRL+i`
-
-
+Проверяем переменную окружения `STARTUP` .
+`CFE> printenv`
+Заменяем значение: 
+`STARTUP R/W  show_logo; cls; boot -z -elf nandflash0.kernel: || boot -z -elf nandflash0.backup_kernel: || boot -z -elf flash0.ro_kernel: || boot -z -elf 192.168.2.1:zImage` 
+на:
 ```php
 CFE>setenv -p STARTUP "boot -z -elf 192.168.2.1:zImage"
 CFE>reboot
