@@ -33,7 +33,7 @@ https://github.com/ZubairLK/mkdebianrfs
 opkg update
 opkg install nfs-kernel-server
 vi /etc/exports
-
+/nfs/smart_nfs/ *(rw,insecure,no_root_squash,subtree_check)
 /etc/init.d/nfs start
 ```
 проверить работоспособность NFS можно примонтировав свежезалитую rootfs к себе: 
