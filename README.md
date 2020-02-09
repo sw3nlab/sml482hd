@@ -55,6 +55,8 @@ https://github.com/alghanmi/openwrt_netgear-wndr3700/wiki/TFTP-Server-on-Your-Op
 ```php
 CFE>setenv -p STARTUP "show_logo;cls;boot -z -elf 192.168.2.1:zImage"
 ```
+> !!! функция show_logo необходима для дальнейшей инициализации графики без неё не стартанут иксы ;(
+
 Перезагружаем SML:
 ```php
 CFE>reboot
@@ -81,7 +83,18 @@ id:2:initdefault:
 id:1:initdefault:
 ```
 После ребута система загрузится в однопользовательском режиме.
+После этого можно стартовать иксы, ssh и загружать `prboom`
 
 ```php
+screen -q
 startx
+ctrl+a+d
+/etc/init.d/ssh start
 ```
+и
+```php
+apt-get update
+apt-get install prboom
+```
+
+
