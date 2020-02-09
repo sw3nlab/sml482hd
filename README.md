@@ -39,6 +39,16 @@ vi /etc/exports
 
 https://github.com/alghanmi/openwrt_netgear-wndr3700/wiki/TFTP-Server-on-Your-OpenWRT-Router
 
+```php
+uci set dhcp.@dnsmasq[0].enable_tftp=1
+uci set dhcp.@dnsmasq[0].tftp_root=/mnt/storage/tftp
+uci set dhcp.@dnsmasq[0].dhcp_boot=pxelinux.0
+#Commit changes
+uci commit dhcp
+#Restart Dnsmasq
+/etc/init.d/dnsmasq restart
+```
+
 
 **(2)** Подключаемся к UART приставки и останавливаем загрузку:
 `CTRL+i`
