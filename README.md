@@ -2,7 +2,7 @@
 
 (Процесс запуска Debian Wheezy на ТВ приставке SML482HD с загрузкой ядра и файловой системы по сети)
 
-**!!! на данный момент ищем способы загрузки ядра и файловой системы с флешки ** 
+> на данный момент ищем способы загрузки ядра и файловой системы с флешки
 (!!! currently looking for ways to boot the kernel and file system from a flash drive)
 push request+
 
