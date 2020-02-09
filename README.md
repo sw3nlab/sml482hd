@@ -2,6 +2,10 @@
 
 (Процесс запуска Debian Wheezy на ТВ приставке SML482HD с загрузкой ядра и файловой системы по сети)
 
+**!!! на данный момент ищем способы загрузки ядра и файловой системы с флешки ** 
+(!!! currently looking for ways to boot the kernel and file system from a flash drive)
+push request+
+
 ### Необходимые шаги:
 - **(0)** Собрать файловую систему (rootfs) и зарузить вместе с ядром (zImage) на хост (192.168.2.1)
 - **(1)** Поднять и настроить TFTP сервер и NFS сервер на Linux хосте или роутере (Для примера: 192.168.2.1).
@@ -49,7 +53,7 @@ https://github.com/alghanmi/openwrt_netgear-wndr3700/wiki/TFTP-Server-on-Your-Op
 
 на загрузку из сети:
 ```php
-CFE>setenv -p STARTUP "boot -z -elf 192.168.2.1:zImage"
+CFE>setenv -p STARTUP "show_logo;cls;boot -z -elf 192.168.2.1:zImage"
 ```
 Перезагружаем SML:
 ```php
@@ -77,3 +81,7 @@ id:2:initdefault:
 id:1:initdefault:
 ```
 После ребута система загрузится в однопользовательском режиме.
+
+```php
+startx
+```
