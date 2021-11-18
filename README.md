@@ -36,7 +36,7 @@ root@debian# apt-get install xfce4
   
 > ядро sml кладём в раздел primary (fat16), файловую систему в раздел 1(ext2) !
   
-  Подключаемся к sml по UART (останавливаем загрузку CTRL+I) и меняем директивы загрузчика U-boot на:
+  Подключаемся к sml по UART (останавливаем загрузку CTRL+I) и меняем директивы бутлоадера CFE на:
   ```php
   CFE> setenv -p STARTUP "show_logo; cls; sleep 3000; boot -z -elf usbdisk0:sml 'mtdparts=spi0.0:1M(bootldr),64K(macadr),64K(nvram),384K(branding),512K(splash),4M(ro_kernel),64K(env),1984K(bsec) bmem=192M@64M bmem=192M@512M'"
   ```
