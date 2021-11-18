@@ -6,21 +6,20 @@
 ![image](https://github.com/sw3nlab/sml482hd/blob/master/cpuinfo.jpg)
 ![image](https://github.com/sw3nlab/sml482hd/blob/master/freedoom.jpg)
 
-
-> на данный момент ищем способы загрузки ядра и файловой системы с флешки
-(!!! currently looking for ways to boot the kernel and file system from a flash drive)
-push request+
-
 ### Необходимые шаги:
 - **(0)** Собрать файловую систему (rootfs) и зарузить вместе с ядром (zImage) на хост (192.168.2.1)
 - **(1)** Поднять и настроить TFTP сервер и NFS сервер на Linux хосте или роутере (Для примера: 192.168.2.1).
 - **(2)** Настроить загрузчик SML482HD (CFE) на загрузку ядра и файловой системы с хоста.
 
 **(0)**
-Для самостоятельной сборки файловой системы можно использовать bash скрипт из этого репозитория или официального:
+Для самостоятельной сборки файловой системы можно использовать bash скрипт из этого репозитория или debootstrap:
 https://github.com/ZubairLK/mkdebianrfs
 Собираем от root'a командой: 
 > sudo ./mkdebianrfs.sh mipsel wheezy wheezy-rootfs
+
+or
+
+> sudo debootstrap --arch=mipsel --foreign rootfs http://ftp.uk.debian.org/debian/
 
 Собраную фс пакуем:
 > sudo tar -cvzf wheezy-roofs.tar.gz wheezy-rootfs
