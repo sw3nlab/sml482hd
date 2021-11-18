@@ -158,5 +158,6 @@ apt-get install prboom
 </details>
 
 
-Вопросы/Предложения
+Вопросы/Предложения:
 
+https://discord.com/invite/vcUt6kP
