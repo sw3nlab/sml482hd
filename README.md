@@ -1,14 +1,10 @@
 ### NFS - Debian Wheezy boot proccess from OpenWRT/LEDE router.
 
-(Процесс запуска Debian Wheezy на ТВ приставке SML482HD с загрузкой ядра и файловой системы по сети)
-
-
-![image](https://github.com/sw3nlab/sml482hd/blob/master/cpuinfo.jpg)
-![image](https://github.com/sw3nlab/sml482hd/blob/master/freedoom.jpg)
+Описание процесса запуска Debian Wheezy на ТВ приставке SML 482 HD :
 
 <details>
 
-  <summary>Загрузка SML 482 HD с Флешки /Boot from usb flash drive </summary>
+  <summary> --> Загрузка с Флешки /Boot from usb flash drive </summary>
   
   0) Разметка флешки 4Gb:
   
@@ -30,7 +26,7 @@
 
 
 <details>
-  <summary>Загрузка ядра по сети / Boot from Lan</summary>
+  <summary> ---> Загрузка ядра по сети / Boot from Lan</summary>
 
 ### Необходимые шаги:
 - **(0)** Собрать файловую систему (rootfs) и зарузить вместе с ядром (zImage) на хост (192.168.2.1)
@@ -138,3 +134,9 @@ apt-get install prboom
 ```
 
 </details>
+
+![image](https://github.com/sw3nlab/sml482hd/blob/master/cpuinfo.jpg)
+![image](https://github.com/sw3nlab/sml482hd/blob/master/freedoom.jpg)
+
+Вопросы/Предложения
+
