@@ -6,6 +6,10 @@
 ![image](https://github.com/sw3nlab/sml482hd/blob/master/cpuinfo.jpg)
 ![image](https://github.com/sw3nlab/sml482hd/blob/master/freedoom.jpg)
 
+
+<detail>
+  <spoiler>Загрузка ядра по сети</spoiler>
+
 ### Необходимые шаги:
 - **(0)** Собрать файловую систему (rootfs) и зарузить вместе с ядром (zImage) на хост (192.168.2.1)
 - **(1)** Поднять и настроить TFTP сервер и NFS сервер на Linux хосте или роутере (Для примера: 192.168.2.1).
@@ -111,4 +115,4 @@ apt-get update
 apt-get install prboom
 ```
 
-
+</detail>
