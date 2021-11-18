@@ -10,10 +10,21 @@
 
   <summary>Загрузка SML 482 HD с Флешки /Boot from usb flash drive </summary>
   
-  Разметка флешки 4Gb:
+  0) Разметка флешки 4Gb:
   
   [------Primary------|-----------------Extendet--------------------]
+  
   [=====1Gb FAT16=====][======1.5GB EXT2=====|======1.5Gb EXT2======] 
+  
+  2) Сборка файловой системы
+------------debootstrap---here------
+  
+> ядро sml кладём в раздел primary (fat16), файловую систему в раздел 1(ext2) !
+  
+  Подключаемся к sml по UART (останавливаем загрузку CTRL+I) и меняем директивы загрузчика U-boot на:
+  ```php
+  CFE> setenv -p STARTUP "show_logo; cls; sleep 3000; boot -z -elf usbdisk0:sml 'mtdparts=spi0.0:1M(bootldr),64K(macadr),64K(nvram),384K(branding),512K(splash),4M(ro_kernel),64K(env),1984K(bsec) bmem=192M@64M bmem=192M@512M'"
+  ```
   
 </details>
 
