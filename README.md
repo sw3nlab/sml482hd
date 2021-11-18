@@ -45,7 +45,7 @@ root@debian# apt-get install xcfe4
 
 
 <details>
-  <summary> ---> Загрузка ядра по сети / Boot from Lan</summary>
+  <summary> ---> Загрузка по сети / Boot from Lan</summary>
 
 ### Необходимые шаги:
 - **(0)** Собрать файловую систему (rootfs) и зарузить вместе с ядром (zImage) на хост (192.168.2.1)
@@ -63,7 +63,7 @@ or
 > sudo debootstrap --arch=mipsel --no-check-gpg rootfs http://ftp.uk.debian.org/debian/
 
 Собраную фс пакуем:
-> sudo tar -cvzf wheezy-roofs.tar.gz wheezy-rootfs
+> sudo tar -cvzf wheezy-roofs.tar.gz rootfs
 
 Загружаем и распаковываем на NFS сервере (192.168.2.1)
 > tar -xvzf wheezy-rootfs.tar.gz
