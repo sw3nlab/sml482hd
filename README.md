@@ -7,8 +7,8 @@
 ![image](https://github.com/sw3nlab/sml482hd/blob/master/freedoom.jpg)
 
 
-<detail>
-  <spoiler>Загрузка ядра по сети</spoiler>
+<details>
+  <summary>Загрузка ядра по сети</summary>
 
 ### Необходимые шаги:
 - **(0)** Собрать файловую систему (rootfs) и зарузить вместе с ядром (zImage) на хост (192.168.2.1)
@@ -115,4 +115,4 @@ apt-get update
 apt-get install prboom
 ```
 
-</detail>
+</details>
