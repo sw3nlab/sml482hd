@@ -12,8 +12,11 @@
   
   [=====1Gb FAT16=====][======1.5GB EXT2=====|======1.5Gb EXT2======] 
   
-  2) Сборка файловой системы
-------------debootstrap---here------
+  2) Сборка файловой системы 
+```php
+  sudo apt-get install binfmt-support qemu qemu-user-static debootstrap bzip2
+  sudo debootstrap --arch=mipsel --no-check-gpg rootfs http://ftp.uk.debian.org/debian/
+  ```
   
   
  3) монтирование файловой системы и установка пакетов 
@@ -149,10 +152,11 @@ apt-get update
 apt-get install prboom
 ```
 
-</details>
-
 ![image](https://github.com/sw3nlab/sml482hd/blob/master/cpuinfo.jpg)
 ![image](https://github.com/sw3nlab/sml482hd/blob/master/freedoom.jpg)
+  
+</details>
+
 
 Вопросы/Предложения
 
