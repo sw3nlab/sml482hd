@@ -1,6 +1,6 @@
-### SML 482 HD Debian Wheezy boot proccess.
+### SML 482 HD Debian GNU/Linux (Wheezy) boot proccess.
 
-Описание процесса запуска Debian Wheezy на ТВ приставке SML 482 HD :
+Описание процесса запуска Debian GNU/Linux (Wheezy) на ТВ приставке SML 482 HD :
 
 <details>
 
