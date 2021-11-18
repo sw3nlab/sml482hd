@@ -30,7 +30,7 @@ chroot rootfs /bin/bash
   
 root@debian# apt-get update
 root@debian# apt-get install openssh-server
-root@debian# apt-get install xcfe4 
+root@debian# apt-get install xfce4 
 .......
   ```
   
