@@ -13,14 +13,14 @@
   [=====1Gb FAT16=====][======1.5GB EXT2=====|======1.5Gb EXT2======] 
   
   2) Сборка файловой системы 
-```php
+```bash
   sudo apt-get install binfmt-support qemu qemu-user-static debootstrap bzip2
   sudo debootstrap --arch=mipsel --no-check-gpg rootfs http://ftp.uk.debian.org/debian/
   ```
   
   
  3) монтирование файловой системы и установка пакетов 
-  ```php
+  ```bash
 mount -t proc proc rootfs/proc
 mount -t sysfs sysfs rootfs/sys
 mount -o bind /dev rootfs/dev
