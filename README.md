@@ -1,4 +1,4 @@
-### NFS - Debian Wheezy boot proccess from OpenWRT/LEDE router.
+### SML 482 HD Debian Wheezy boot proccess.
 
 Описание процесса запуска Debian Wheezy на ТВ приставке SML 482 HD :
 
