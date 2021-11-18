@@ -6,6 +6,17 @@
 ![image](https://github.com/sw3nlab/sml482hd/blob/master/cpuinfo.jpg)
 ![image](https://github.com/sw3nlab/sml482hd/blob/master/freedoom.jpg)
 
+<details>
+
+  <summary>Загрузка SML 482 HD с Флешки /Boot from usb flash drive </summary>
+  
+  Разметка флешки 4Gb:
+  
+  [------Primary------|-----------------Extendet--------------------]
+  [=====1Gb FAT16=====][======1.5GB EXT2=====|======1.5Gb EXT2======] 
+  
+</details>
+
 
 <details>
   <summary>Загрузка ядра по сети</summary>
