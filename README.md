@@ -15,11 +15,11 @@
 Для самостоятельной сборки файловой системы можно использовать bash скрипт из этого репозитория или debootstrap:
 https://github.com/ZubairLK/mkdebianrfs
 Собираем от root'a командой: 
-> sudo ./mkdebianrfs.sh mipsel wheezy wheezy-rootfs
+> sudo ./mkdebianrfs.sh mipsel wheezy rootfs
 
 or
 
-> sudo debootstrap --arch=mipsel --foreign rootfs http://ftp.uk.debian.org/debian/
+> sudo debootstrap --arch=mipsel --no-check-gpg rootfs http://ftp.uk.debian.org/debian/
 
 Собраную фс пакуем:
 > sudo tar -cvzf wheezy-roofs.tar.gz wheezy-rootfs
