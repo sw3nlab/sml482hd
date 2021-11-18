@@ -15,6 +15,22 @@
   2) Сборка файловой системы
 ------------debootstrap---here------
   
+  
+ 3) монтирование файловой системы и установка пакетов 
+  ```php
+mount -t proc proc rootfs/proc
+mount -t sysfs sysfs rootfs/sys
+mount -o bind /dev rootfs/dev
+mount --bind /dev/pts/ rootfs/dev/pts/
+cp /usr/bin/qemu-mipsel-static rootfs/usr/bin/
+chroot rootfs /bin/bash
+  
+root@debian# apt-get update
+root@debian# apt-get install openssh-server
+root@debian# apt-get install xcfe4 
+.......
+  ```
+  
 > ядро sml кладём в раздел primary (fat16), файловую систему в раздел 1(ext2) !
   
   Подключаемся к sml по UART (останавливаем загрузку CTRL+I) и меняем директивы загрузчика U-boot на:
