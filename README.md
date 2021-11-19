@@ -1,6 +1,7 @@
 # SML 482 HD Debian GNU/Linux (Wheezy) boot proccess.
 
 Описание процесса запуска Debian GNU/Linux (Wheezy) на ТВ приставке SML 482 HD :
+Вариант (1):
 
 <details>
 
@@ -50,7 +51,7 @@ root@debian# apt-get install xfce4
 </details>
 
 
-
+Вариант (2):
 <details>
   <summary> <b> Загрузка по сети (ядро zImage) / Boot from Lan (zImage kernel) </b> </summary>
 
