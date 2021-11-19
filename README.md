@@ -38,7 +38,7 @@ sudo chroot rootfs /bin/bash
 root@debian# apt-get update
 root@debian# passwd root 
 root@debian# apt-get install openssh-server
-root@debian# apt-get install xfce4 
+root@debian# apt-get install xorg lxde-core 
 .......
   ```
   
@@ -46,7 +46,7 @@ root@debian# apt-get install xfce4
   
   Подключаемся к sml по UART (останавливаем загрузку CTRL+I) и меняем директивы бутлоадера CFE на:
   ```php
-  CFE> setenv -p STARTUP "show_logo; cls; sleep 3000; boot -z -elf usbdisk0:sml 'mtdparts=spi0.0:1M(bootldr),64K(macadr),64K(nvram),384K(branding),512K(splash),4M(ro_kernel),64K(env),1984K(bsec) bmem=192M@64M bmem=192M@512M'"
+  CFE> setenv -p STARTUP "show_logo; cls; sleep 3000; boot -z -elf usbdisk0:sml"
   ```
 
 ### перезагружаем приставку
