@@ -6,7 +6,8 @@
 
   <summary> --> Загрузка с Флешки (ядро sml) /Boot from usb flash drive (sml kernel)</summary>
   
-  0) Разметка флешки 4Gb (размечать удобнее утилитой `gparter`):
+  
+  ### 0) Разметка флешки 4Gb (размечать удобнее утилитой `gparter`):
   
   ```php
   [===== Primary =====|===================Extended==================]
@@ -15,36 +16,39 @@
   [=======[sml]=======|=======[rootfs]=======|======================]
   ```
   
-  2) Сборка файловой системы 
+  ### 2) Сборка файловой системы 
 ```bash
   sudo apt-get install binfmt-support qemu qemu-user-static debootstrap bzip2
   sudo debootstrap --arch=mipsel --no-check-gpg wheezy rootfs http://archive.debian.org/debian/
   ```
   
   
- 3) монтирование файловой системы и установка пакетов 
+ ### 3) монтирование файловой системы, установка пароля, установка пакетов 
   ```bash
-mount -t proc proc rootfs/proc
-mount -t sysfs sysfs rootfs/sys
-mount -o bind /dev rootfs/dev
-mount --bind /dev/pts/ rootfs/dev/pts/
-cp /usr/bin/qemu-mipsel-static rootfs/usr/bin/
-chroot rootfs /bin/bash
+sudo mount -t proc proc rootfs/proc
+sudo mount -t sysfs sysfs rootfs/sys
+sudo mount -o bind /dev rootfs/dev
+sudo mount --bind /dev/pts/ rootfs/dev/pts/
+sudo cp /usr/bin/qemu-mipsel-static rootfs/usr/bin/
+sudo chroot rootfs /bin/bash
   
 root@debian# apt-get update
+root@debian# passwd root 
 root@debian# apt-get install openssh-server
 root@debian# apt-get install xfce4 
 .......
   ```
   
-> ядро sml кладём в раздел primary (fat16), файловую систему в раздел 1(ext2) !
+> копируем ядро `sml` на флешку в раздел primary (fat16), файловую систему `rootfs` в раздел 1(ext2) !
   
   Подключаемся к sml по UART (останавливаем загрузку CTRL+I) и меняем директивы бутлоадера CFE на:
   ```php
   CFE> setenv -p STARTUP "show_logo; cls; sleep 3000; boot -z -elf usbdisk0:sml 'mtdparts=spi0.0:1M(bootldr),64K(macadr),64K(nvram),384K(branding),512K(splash),4M(ro_kernel),64K(env),1984K(bsec) bmem=192M@64M bmem=192M@512M'"
   ```
-  
+
+### перезагружаем приставку
 </details>
+
 
 
 <details>
