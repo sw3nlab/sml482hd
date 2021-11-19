@@ -16,14 +16,14 @@
   [=======[sml]=======|=======[rootfs]=======|======================]
   ```
   
-  ### 2) Сборка файловой системы 
+  ### 1) Сборка файловой системы 
 ```bash
   sudo apt-get install binfmt-support qemu qemu-user-static debootstrap bzip2
   sudo debootstrap --arch=mipsel --no-check-gpg wheezy rootfs http://archive.debian.org/debian/
   ```
   
   
- ### 3) монтирование файловой системы, установка пароля, установка пакетов 
+ ### 2) монтирование файловой системы, установка пароля, установка пакетов 
   ```bash
 sudo mount -t proc proc rootfs/proc
 sudo mount -t sysfs sysfs rootfs/sys
