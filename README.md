@@ -52,7 +52,7 @@ root@debian# apt-get install xfce4
 
 
 <details>
-  <summary> ### Загрузка по сети (ядро zImage) / Boot from Lan (zImage kernel)</summary>
+  <summary> <b> Загрузка по сети (ядро zImage) / Boot from Lan (zImage kernel) </b> </summary>
 
 ### Необходимые шаги:
 - **(0)** Собрать файловую систему (rootfs) и зарузить вместе с ядром (zImage) на хост (192.168.2.1)
