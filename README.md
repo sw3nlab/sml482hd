@@ -4,7 +4,7 @@
 
 <details>
 
-  <summary> --> Загрузка с Флешки /Boot from usb flash drive </summary>
+  <summary> --> Загрузка с Флешки (ядро sml) /Boot from usb flash drive (sml kernel)</summary>
   
   0) Разметка флешки 4Gb:
   
@@ -45,7 +45,7 @@ root@debian# apt-get install xfce4
 
 
 <details>
-  <summary> ---> Загрузка по сети / Boot from Lan</summary>
+  <summary> ---> Загрузка по сети (ядро zImage) / Boot from Lan (zImage kernel)</summary>
 
 ### Необходимые шаги:
 - **(0)** Собрать файловую систему (rootfs) и зарузить вместе с ядром (zImage) на хост (192.168.2.1)
