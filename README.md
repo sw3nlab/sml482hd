@@ -10,15 +10,15 @@
   
   ```php
   [===== Primary =====|===================Extendet==================]
-  [========sml========|=========rootfs=======|======================]
-  [=====1Gb FAT16=====|=======1.5GB EXT2=====|======1.5Gb EXT2======] 
   [===================|======================|======================]
+  [=====1Gb FAT16=====|=======1.5GB EXT2=====|======1.5Gb EXT2======] 
+  [=======[sml]=======|=======[rootfs]=======|======================]
   ```
   
   2) Сборка файловой системы 
 ```bash
   sudo apt-get install binfmt-support qemu qemu-user-static debootstrap bzip2
-  sudo debootstrap --arch=mipsel --no-check-gpg rootfs http://ftp.uk.debian.org/debian/
+  sudo debootstrap --arch=mipsel --no-check-gpg wheezy rootfs http://archive.debian.org/debian/
   ```
   
   
