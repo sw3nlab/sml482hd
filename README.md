@@ -1,4 +1,4 @@
-### SML 482 HD Debian GNU/Linux (Wheezy) boot proccess.
+# SML 482 HD Debian GNU/Linux (Wheezy) boot proccess.
 
 Описание процесса запуска Debian GNU/Linux (Wheezy) на ТВ приставке SML 482 HD :
 
@@ -7,7 +7,7 @@
   <summary> --> Загрузка с Флешки (ядро sml) /Boot from usb flash drive (sml kernel)</summary>
   
   
-  # 0) Разметка флешки 4Gb (размечать удобнее утилитой `gparter`):
+  #### 0) Разметка флешки 4Gb (размечать удобнее утилитой `gparter`):
   
   ```php
   [===== Primary =====|===================Extended==================]
