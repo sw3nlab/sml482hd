@@ -4,7 +4,7 @@
 
 <details>
 
-  <summary> ### Загрузка с Флешки (ядро sml) /Boot from usb flash drive (sml kernel)</summary>
+  <summary> <b> Загрузка с Флешки (ядро sml) /Boot from usb flash drive (sml kernel)</b> </summary>
   
   
   ##### 0) Разметка флешки 4Gb (размечать удобнее утилитой `gparter`):
