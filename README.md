@@ -2,6 +2,7 @@
 
 Описание процесса запуска Debian GNU/Linux (Wheezy) на ТВ приставке SML 482 HD.
 
+![image](https://github.com/sw3nlab/sml482hd/blob/master/2010-01-01-043528_720x576_scrot.png)
 
 Вариант (1):
 
