@@ -35,10 +35,10 @@ sudo mount --bind /dev/pts/ rootfs/dev/pts/
 sudo cp /usr/bin/qemu-mipsel-static rootfs/usr/bin/
 sudo chroot rootfs /bin/bash
   
-root@debian# apt-get update
-root@debian# passwd root 
+root@debian# passwd root
+root@debian# apt-get update 
 root@debian# apt-get install openssh-server
-root@debian# apt-get install xorg lxde-core 
+root@debian# apt-get install xorg lxde-core lightdm
 .......
   ```
   
