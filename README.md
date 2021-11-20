@@ -47,9 +47,11 @@ root@debian# apt-get install xorg lxde-core
   Подключаемся к sml по UART (останавливаем загрузку CTRL+I) и меняем директивы бутлоадера CFE на:
   ```php
   CFE> setenv -p STARTUP "show_logo; cls; sleep 3000; boot -z -elf usbdisk0:sml"
+  CFE> reboot
   ```
 
-### перезагружаем приставку
+##### перезагружаем приставку
+
 </details>
 
 
