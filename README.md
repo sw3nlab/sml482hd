@@ -8,7 +8,7 @@
 
 <details>
 
-  <summary> <b> Загрузка с Флешки (ядро sml) /Boot from usb flash drive (sml kernel)</b> </summary>
+  <summary> <b> Загрузка с Флешки (с ядром sml) /Boot from usb flash drive (sml kernel)</b> </summary>
   
   
   ##### 0) Разметка флешки 4Gb 
@@ -61,7 +61,7 @@ root@debian# apt-get install xorg lxde-core lightdm
 
 Вариант (2):
 <details>
-  <summary> <b> Загрузка по сети (ядро zImage) / Boot from Lan (zImage kernel) </b> </summary>
+  <summary> <b> Загрузка по сети (с ядром zImage) / Boot from Lan (zImage kernel) </b> </summary>
 
 ### Необходимые шаги:
 - **(0)** Собрать файловую систему (rootfs) и зарузить вместе с ядром (zImage) на хост (192.168.2.1)
@@ -69,14 +69,9 @@ root@debian# apt-get install xorg lxde-core lightdm
 - **(2)** Настроить загрузчик SML482HD (CFE) на загрузку ядра и файловой системы с хоста.
 
 **(0)**
-Для самостоятельной сборки файловой системы можно использовать bash скрипт из этого репозитория или debootstrap:
-https://github.com/ZubairLK/mkdebianrfs
+Cборка файловой системы `rootfs`
 Собираем от root'a командой: 
-> sudo ./mkdebianrfs.sh mipsel wheezy rootfs
-
-or
-
-> sudo debootstrap --arch=mipsel --no-check-gpg rootfs http://ftp.uk.debian.org/debian/
+> sudo debootstrap --arch=mipsel --no-check-gpg rootfs http://archive.debian.org/debian/
 
 Собраную фс пакуем:
 > sudo tar -cvzf wheezy-roofs.tar.gz rootfs
