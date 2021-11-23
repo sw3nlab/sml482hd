@@ -47,7 +47,7 @@ root@debian# apt-get install xorg lxde-core lightdm
   
   Подключаемся к sml по UART (останавливаем загрузку CTRL+I) и меняем директивы бутлоадера CFE на:
   ```php
-  CFE> setenv -p STARTUP "show_logo; cls; sleep 3000; boot -z -elf usbdisk0:sml"
+  CFE> setenv -p STARTUP "show_logo; cls; sleep 3000; boot -z -elf usbdisk0:sml 'bmem=512M@512M'"
   CFE> reboot
   ```
 
