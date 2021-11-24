@@ -1,5 +1,6 @@
-Железо SML позволяет запускать эмулятор SONY Playstation 
+Железо SML позволяет запускать эмулятор <b>SONY PlayStation 1</b> 
 
+![image](https://github.com/sw3nlab/sml482hd/blob/master/2010-01-01-012904_720x576_scrot.png)
 
 Установка эмулятора: 
 ```php
