@@ -1,4 +1,4 @@
-![image]()
+![image](https://github.com/sw3nlab/sml482hd/blob/master/DOSgames_emu/2010-01-01-024325_720x576_scrot.png)
 
 Установка и запуск DOS игр на примере `DUNE 2`
 
