@@ -169,7 +169,7 @@ apt-get install prboom
   
 </details>
 
-Сборка собственного ядра:
+Сборка собственного ядра / Cross compile from source:
 https://github.com/sw3nlab/sml482hd/tree/master/manual_kernel_cross_compile
 
 
