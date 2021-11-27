@@ -1,6 +1,7 @@
 Для самостоятельной сборки, можно взять исходный код ядра и набор кросс-компиляторов из репозитория производителя:
 
 stblinux-3.3 - (kernel+rootfs)  <---> https://github.com/Broadcom/stblinux-3.3
+
 brcmgcc-4.8 - (gcc, ar, ld...) <---> https://github.com/Broadcom/stbgcc-4.8
 
 ```php
