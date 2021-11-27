@@ -1,4 +1,4 @@
-![image](https://github.com/sw3nlab/sml482hd/blob/master/DOSgames_emu/menuconfig.png)
+![image](https://github.com/sw3nlab/sml482hd/blob/master/manual_kernel_cross_compile/menuconfig.png)
 
 
 Для самостоятельной сборки, можно взять исходный код ядра и набор кросс-компиляторов из репозитория производителя:
