@@ -8,7 +8,8 @@ stblinux-3.3 - (kernel+rootfs)  <---> https://github.com/Broadcom/stblinux-3.3
 brcmgcc-4.8 - (gcc, ar, ld...) <---> https://github.com/Broadcom/stbgcc-4.8
 
 ```php
-git clone https://github.com/Broadcom/stbgcc4.8
+wget https://github.com/Broadcom/stbgcc-4.8/releases/download/stbgcc-4.8-1.7/stbgcc-4.8-1.7.tar.bz2
+tar -xf stbgcc-4.8-1.7.tar.bz2
 git clone https://github.com/Broadcom/brcmstb3.3
 
 cd brcmstb3.3/linux
