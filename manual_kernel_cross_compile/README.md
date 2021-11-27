@@ -1,3 +1,6 @@
+![image](https://github.com/sw3nlab/sml482hd/blob/master/DOSgames_emu/menuconfig.png)
+
+
 Для самостоятельной сборки, можно взять исходный код ядра и набор кросс-компиляторов из репозитория производителя:
 
 stblinux-3.3 - (kernel+rootfs)  <---> https://github.com/Broadcom/stblinux-3.3
