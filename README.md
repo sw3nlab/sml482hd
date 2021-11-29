@@ -72,7 +72,7 @@ root@debian# apt-get install xorg lxde-core lightdm
 **(0)**
 Cборка файловой системы `rootfs`
 Собираем от root'a командой: 
-> sudo debootstrap --arch=mipsel --no-check-gpg rootfs http://archive.debian.org/debian/
+`sudo debootstrap --arch=mipsel --no-check-gpg rootfs http://archive.debian.org/debian/`
 
 Собраную фс пакуем:
 > sudo tar -cvzf wheezy-roofs.tar.gz rootfs
