@@ -10,7 +10,7 @@ brcmgcc-4.8 - (gcc, ar, ld...) <---> https://github.com/Broadcom/stbgcc-4.8
 ```php
 wget https://github.com/Broadcom/stbgcc-4.8/releases/download/stbgcc-4.8-1.7/stbgcc-4.8-1.7.tar.bz2
 tar -xf stbgcc-4.8-1.7.tar.bz2
-git clone https://github.com/Broadcom/brcmstb3.3
+git clone https://github.com/Broadcom/stblinux-3.3
 
 cd brcmstb3.3/linux
 make CROSS_COMPILE={адрес_кросс_компиляторов_stbgcc4.8/bin/mipsel-linux-gnu-} brcm7231b0_defconfig <--- аттачим дефолтный конфиг этого камня
