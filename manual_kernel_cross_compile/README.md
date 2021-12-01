@@ -13,9 +13,9 @@ tar -xf stbgcc-4.8-1.7.tar.bz2
 git clone https://github.com/Broadcom/stblinux-3.3
 
 cd brcmstb3.3/linux
-make CROSS_COMPILE={адрес_кросс_компиляторов_stbgcc4.8/bin/mipsel-linux-gnu-} bcm7231b0_defconfig <--- аттачим дефолтный конфиг этого камня
-make CROSS_COMPILE={адрес_кросс_компиляторов_stbgcc4.8/bin/mipsel-linux-gnu-} menuconfig <--- конфигурируем, добавляем плюшки
-make CROSS_COMPILE={адрес_кросс_компиляторов_stbgcc4.8/bin/mipsel-linux-gnu-} <--- компилируем ядро можно с ключём -j равному кол.ву ядер вашего процессора
+make ARCH=mips CROSS_COMPILE={адрес_кросс_компиляторов_stbgcc4.8/bin/mipsel-linux-gnu-} bcm7231b0_defconfig <--- аттачим дефолтный конфиг этого камня
+make ARCH=mips CROSS_COMPILE={адрес_кросс_компиляторов_stbgcc4.8/bin/mipsel-linux-gnu-} menuconfig <--- конфигурируем, добавляем плюшки
+make ARCH=mips CROSS_COMPILE={адрес_кросс_компиляторов_stbgcc4.8/bin/mipsel-linux-gnu-} <--- компилируем ядро можно с ключём -j равному кол.ву ядер вашего процессора
 
 ls
 vmlinuz <--- на выходе получим запакованое ядро которое можно закидывать на флешку в fat16 раздел, если нет ошибок в процессе компиляции
