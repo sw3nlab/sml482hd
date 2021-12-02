@@ -12,7 +12,7 @@ wget https://github.com/Broadcom/stbgcc-4.8/releases/download/stbgcc-4.8-1.7/stb
 tar -xf stbgcc-4.8-1.7.tar.bz2
 git clone https://github.com/Broadcom/stblinux-3.3
 
-cd brcmstb3.3/linux
+cd stblinux-3.3/linux
 make ARCH=mips CROSS_COMPILE={адрес_кросс_компиляторов_stbgcc4.8/bin/mipsel-linux-gnu-} bcm7231b0_defconfig <--- аттачим дефолтный конфиг этого камня
 make ARCH=mips CROSS_COMPILE={адрес_кросс_компиляторов_stbgcc4.8/bin/mipsel-linux-gnu-} menuconfig <--- конфигурируем, добавляем плюшки
 make ARCH=mips CROSS_COMPILE={адрес_кросс_компиляторов_stbgcc4.8/bin/mipsel-linux-gnu-} <--- компилируем ядро можно с ключём -j равному кол.ву ядер вашего процессора
