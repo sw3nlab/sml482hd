@@ -46,7 +46,7 @@ root@debian# apt-get install xorg lxde-core lightdm
 .......
   ```
   
-3)##### копируем ядро `sml` на флешку в главный раздел primary (50Mb fat16), 
+3) копируем ядро `sml` на флешку в главный раздел primary (50Mb fat16), 
   а файловую систему `rootfs` в расширеный раздел (3.95Gb ext2) !
   
   ```php
