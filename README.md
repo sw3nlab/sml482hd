@@ -46,8 +46,14 @@ root@debian# apt-get install xorg lxde-core lightdm
 .......
   ```
   
-> копируем ядро `sml` на флешку в главный раздел primary (50Mb fat16), 
+3)##### копируем ядро `sml` на флешку в главный раздел primary (50Mb fat16), 
   а файловую систему `rootfs` в расширеный раздел (3.95Gb ext2) !
+  
+  ```php
+sudo cp sml /media/USER/FLASH_DRIVE_FAT16
+cd rootfs
+sudo cp -a * /media/USER/FLASH_DRIVE_EXT2
+  ```
   
   Подключаемся к приставке по UART (останавливаем загрузку CTRL+I) и меняем директивы бутлоадера CFE на:
   ```php
