@@ -23,16 +23,14 @@ vmlinuz <--- на выходе получим запакованое ядро к
 
 при загрузке необходимо явно указать ядру что откуда брать и куда выводить:
 
-`CFE>boot -z -elf usbdisk0:vmlinuz 'console=ttyS2,115200n8 rootwait root=/dev/sda5 init=/bin/bash'`
+`CFE>boot -z -elf usbdisk0:vmlinuz 'console=ttyS2,115200n8 rootwait root=/dev/sda5 init=/sbin/init'`
 
 - `console=ttyS2,115200n8` <--- UART пины на плате SML (в какую консоль выводить лог загрузки)
 - `rootwait` - ожидание определения ядром всех блочных устройств
 - `root` - в каком разделе находится файловая система
 - `init` - первый демон, обычно init, но можно и hello_world =)
 
-init=/sbin/init - из сборки `debootstrap` инициализирует систему но есть недочёты (непонятное поведение ssh демона)
 
-на данный момент видео не инициализируется.
 тестирование в процессе...
 
 
