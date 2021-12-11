@@ -181,3 +181,5 @@ https://github.com/sw3nlab/sml482hd/tree/master/manual_kernel_cross_compile
 
 Вопросы/Предложения:<br/>
 https://discord.com/invite/vcUt6kP
+
+***Донаты направляйте в благотворительные организации в вашей локации... =)
