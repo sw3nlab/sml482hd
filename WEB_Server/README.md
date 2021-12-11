@@ -20,7 +20,7 @@ PHPTTS - это графический интерфейс написаный н�
 > !!! для работы необходима usb звуковая карта и ядро sml_sound
 
 ```php
-#apt-get install apache2 php5
+#apt-get install alsa apache2 php5
 #cd /var/www
 #wget --no-check-certificate https://github.com/sw3nlab/phptts/archive/refs/heads/master.zip
 #unzip master.zip
