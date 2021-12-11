@@ -8,7 +8,7 @@ root@debian:~# aplay -l
 aplay: device_list:252: no soundcards found...
 ```
 
-- Поддержка USB-звуковых карт доступна в нашей сборке ядра `sml_sound` ( https://github.com/sw3nlab/sml482hd/blob/master/WEB_Server/sml_sound ), но загрузившись с этим ядром не будет видео (так как нам не удалось найти исходников драйвера фреймбуфера brcmfb.ko)
+- Поддержка USB-звуковых карт доступна в нашей сборке ядра `sml_sound` ( https://github.com/sw3nlab/sml482hd/blob/master/WEB_Server/sml_sound ), но загрузившись с этим ядром не будет видео (так как нам не удалось найти исходников драйвера фреймбуфера brcmfb возможно они проприетарные =/ )
 
 
 ??? система уходит в `Kernel Panic` после обновления до `Jessie` на ядре 3.3 через `sources.list` требуется обновление ядра.
