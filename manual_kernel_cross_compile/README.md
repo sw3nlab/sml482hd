@@ -1,7 +1,7 @@
 ![image](https://github.com/sw3nlab/sml482hd/blob/master/manual_kernel_cross_compile/menuconfig.png)
 
 
-Для самостоятельной сборки, можно взять исходный код ядра и набор кросс-компиляторов из репозитория производителя:
+Для самостоятельной сборки, можно взять исходный код ядра и набор кросс-компиляторов из репозитория производителя Broadcom:
 
 stblinux-3.3 - (kernel+rootfs)  <---> https://github.com/Broadcom/stblinux-3.3
 
