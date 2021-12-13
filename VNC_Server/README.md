@@ -1,3 +1,4 @@
+![image](https://github.com/sw3nlab/sml482hd/blob/master/VNC_Server/Screenshot_20211214-015447_VNC_Viewer.png)
 Для удалённой работы неплохо показал себя `tightvncserver`
 
 ```php
@@ -15,4 +16,3 @@ and view-only-mode passwd
 
 в клиенте указываем 192.168.2.111:5901
 
-![image](https://github.com/sw3nlab/sml482hd/blob/master/VNC_Server/Screenshot_20211214-015447_VNC_Viewer.png)
