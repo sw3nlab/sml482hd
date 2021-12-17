@@ -9,3 +9,6 @@
 Модули собраны одним из пользователей `4pda` с ником `shatle03`
 
 https://4pda.to/forum/index.php?showtopic=965786&st=9340#entry97407540
+
+
+<small>... можно попросить у него `linux-headers` с которыми происходила сборка =)</small>
