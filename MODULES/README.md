@@ -4,6 +4,12 @@
 
 Подгружаются через `insmod [modulename.ko]`
 
+```php
+SML@debian#wget --no-check-certificate https://github.com/sw3nlab/sml482hd/archive/refs/heads/master.zip
+SML@debian#unzip master.zip
+SML@debian#insmod 
+```
+
 ================================
 
 Модули собраны одним из пользователей `4pda` с ником `shatle03`
