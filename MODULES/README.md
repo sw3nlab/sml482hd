@@ -7,7 +7,7 @@
 ```php
 SML@debian#wget --no-check-certificate https://github.com/sw3nlab/sml482hd/archive/refs/heads/master.zip
 SML@debian#unzip master.zip
-SML@debian#insmod 
+SML@debian#insmod sml482hd-master/MODULES/8192eu.ko
 ```
 
 ================================
