@@ -178,6 +178,9 @@ apt-get install prboom
 Сборка собственного ядра / Cross compile from source:
 https://github.com/sw3nlab/sml482hd/tree/master/manual_kernel_cross_compile
 
+После установки желательно обновить `ssl` сертификаты:
+>`update-ca-certificates --fresh`
+
 
 Вопросы/Предложения:<br/>
 https://discord.com/invite/vcUt6kP
