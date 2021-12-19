@@ -181,7 +181,8 @@ https://github.com/sw3nlab/sml482hd/tree/master/manual_kernel_cross_compile
 После установки нужно установить пакет `ntp` для синхронизации времени
 ```php
 SML@debian#apt-get install ntp
-SML@debian#
+SML@debian#ln -sf /usr/share/zoneinfo/Europe/Moscow /etc/localtime
+SML@debian#date
 ```
 
 и обновить сертификаты :
