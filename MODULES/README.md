@@ -1,8 +1,8 @@
 ![image](https://github.com/sw3nlab/sml482hd/blob/master/MODULES/Screenshot_20211217-031358_Termius.png)
 
-Рабочие модули ядра `sml (smartlabs) 3.3.8-3.3` для wi-fi железа на чипах `Realtek` 
+Рабочие модули ядра `sml (smartlabs) 3.3.8-3.3` для wi-fi адаптеров на чипах `Realtek`
 
-Подгружаются через `insmod [modulename.ko]`
+Подгружаются через `insmod modulename.ko`
 
 ```php
 SML@debian#wget --no-check-certificate https://github.com/sw3nlab/sml482hd/archive/refs/heads/master.zip
