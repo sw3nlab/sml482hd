@@ -178,7 +178,13 @@ apt-get install prboom
 Сборка собственного ядра / Cross compile from source:
 https://github.com/sw3nlab/sml482hd/tree/master/manual_kernel_cross_compile
 
-После установки нужно обновить сертификаты :
+После установки нужно установить пакет `ntp` для синхронизации времени
+```php
+SML@debian#apt-get install ntp
+SML@debian#
+```
+
+и обновить сертификаты :
 >`update-ca-certificates --fresh`
 
 
