@@ -5,6 +5,13 @@
 Подгружаются через `insmod modulename.ko`
 
 ```php
+SML@debian#wget https://github.com/sw3nlab/sml482hd/raw/master/MODULES/rt5370sta.ko
+SML@debian#insmod rt5370sta.ko
+```
+
+Если не установлены сертификаты.
+
+```php
 SML@debian#wget --no-check-certificate https://github.com/sw3nlab/sml482hd/archive/refs/heads/master.zip
 SML@debian#unzip master.zip
 SML@debian#insmod sml482hd-master/MODULES/8192eu.ko
