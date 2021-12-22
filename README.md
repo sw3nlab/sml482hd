@@ -186,6 +186,9 @@ apt-get install prboom
 Сборка собственного ядра / Cross compile from source:
 https://github.com/sw3nlab/sml482hd/tree/master/manual_kernel_cross_compile
 
+Обновление до Debian Jessie / Jessie Update
+https://github.com/sw3nlab/sml482hd/tree/master/Jessie_update
+
 После установки нужно установить пакет `ntp` для синхронизации времени
 ```php
 SML@debian#apt-get install ntp
