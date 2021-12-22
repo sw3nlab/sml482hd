@@ -43,11 +43,19 @@ root@debian# passwd root
 root@debian# apt-get update 
 root@debian# apt-get install openssh-server
 root@debian# apt-get install xorg lxde-core lightdm
+
+root@debian# exit
+sudo umount rootfs/proc
+sudo umount rootfs/sys
+sudo umount rootfs/dev/pts
+sudo umount rootfs/dev
 .......
   ```
   
 ##### 3) копируем ядро `sml` на флешку в главный раздел primary (50Mb fat16), 
   а файловую систему `rootfs` в расширеный раздел (3.95Gb ext2) !
+  
+  
   
   ```php
 sudo cp sml /media/USER/FLASH_DRIVE_FAT16
