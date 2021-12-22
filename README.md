@@ -43,8 +43,8 @@ root@debian# passwd root
 root@debian# apt-get update 
 root@debian# apt-get install openssh-server
 root@debian# apt-get install xorg lxde-core lightdm
-
 root@debian# exit
+  
 sudo umount rootfs/proc
 sudo umount rootfs/sys
 sudo umount rootfs/dev/pts
