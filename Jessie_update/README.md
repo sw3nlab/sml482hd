@@ -33,6 +33,6 @@ deb http://archive.debian.org/debian jessie main contrib non-free
 
 
 >в этом ядре нет проприетарного драйвера фреймбуфера, 
->поэтому "КИНА не будет" не через hdmi, ни через RCA AUX (подробнее в разделе `PROBLEMS`) 
+>поэтому "КИНА не будет" ни через hdmi, ни через RCA AUX (подробнее в разделе `PROBLEMS`) 
 >но свой рабочий стол можно увидеть например так (https://github.com/sw3nlab/sml482hd/tree/master/VNC_Server)
 так же после обновления возможны проблемы с `aptitude` --> `Segmentation Fault`
