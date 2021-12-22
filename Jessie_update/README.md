@@ -25,3 +25,6 @@ deb http://archive.debian.org/debian jessie main contrib non-free
 
 `apt-get update` затем `apt-get upgrade`
 
+
+!!! не забываем про то что в бутлоадере `CFE` нужно будет тоже поменять название ядра, с которым вы будете грузится и адрес файловой системы иначе загрузчик просто ничего не загрузит )
+`CFE> setenv -p STARTUP "boot -elf usbdisk0:kernel_3_14 'rootwait root=/dev/sda5 init=/sbin/init'"`
