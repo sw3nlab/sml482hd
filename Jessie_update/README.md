@@ -32,5 +32,6 @@ deb http://archive.debian.org/debian jessie main contrib non-free
 `CFE> setenv -p STARTUP "boot -elf usbdisk0:kernel_3_14 'rootwait root=/dev/sda5 init=/sbin/init'"`
 
 
->в этом ядре нет проприетарного драйвера фреймбуфера, поэтому КИНА не будет не через hdmi ни через RCA AUX (подробнее в разделе `PROBLEMS`) 
+>в этом ядре нет проприетарного драйвера фреймбуфера, 
+>поэтому "КИНА не будет" не через hdmi ни через RCA AUX (подробнее в разделе `PROBLEMS`) свой рабочий стол можно увидеть через `tightvncserver`
 после обновления возможны проблемы например с `aptitude` --> `Segmentation Fault`
