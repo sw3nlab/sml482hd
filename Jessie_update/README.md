@@ -1,3 +1,4 @@
+https://github.com/sw3nlab/sml482hd/blob/master/VNC_Server/Screenshot_20211214-015447_VNC_Viewer.png
 Обновится до `jessie` можно следующим образом.
 
 0 - собираем файловую систему `wheezy` через `debootstrap`
