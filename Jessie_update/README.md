@@ -8,7 +8,7 @@
 
 3 - Загружаемся... заходим по ssh на приставку.
 
-Уладяем или комментируем строчку в `/apt/sources.list` добавлением знака `#`
+Удаляем или комментируем строчку в `/apt/sources.list` добавлением знака `#`
 
 ```php
 #deb http://archive.debian.org/debian wheezy main
