@@ -37,5 +37,8 @@ PHPTTS - это графический интерфейс написаный н�
 ```php
 apt-get install davfs2
 mkdir /mnt/yandexdisk
-mount -t davfs https://
+mount -t davfs https://webdav.yandex.ru /mnt/yandexdisk
+Login:
+Password:
+df -h
 ```
