@@ -3,16 +3,16 @@
 
 Для самостоятельной сборки, можно взять исходный код ядра и набор кросс-компиляторов из репозитория производителя Broadcom:
 
-stblinux-3.3 - (kernel+rootfs)  <---> https://github.com/Broadcom/stblinux-3.3
+stblinux-3.3 - (kernel+rootfs)  <---> https://github.com/Broadcom/stblinux-3.14
 
 brcmgcc-4.8 - (gcc, ar, ld...) <---> https://github.com/Broadcom/stbgcc-4.8
 
 ```php
 wget https://github.com/Broadcom/stbgcc-4.8/releases/download/stbgcc-4.8-1.7/stbgcc-4.8-1.7.tar.bz2
 tar -xf stbgcc-4.8-1.7.tar.bz2
-git clone https://github.com/Broadcom/stblinux-3.3
+git clone https://github.com/Broadcom/stblinux-3.14
 
-cd stblinux-3.3/linux
+cd stblinux-3.14/linux
 make ARCH=mips CROSS_COMPILE={адрес_кросс_компиляторов_stbgcc4.8/bin/mipsel-linux-} bcm7231b0_defconfig <--- аттачим дефолтный конфиг этого камня
 make ARCH=mips CROSS_COMPILE={адрес_кросс_компиляторов_stbgcc4.8/bin/mipsel-linux-} menuconfig <--- конфигурируем, добавляем плюшки
 make ARCH=mips CROSS_COMPILE={адрес_кросс_компиляторов_stbgcc4.8/bin/mipsel-linux-} <--- компилируем ядро можно с ключём -j равному кол.ву ядер вашего процессора
