@@ -191,8 +191,11 @@ https://github.com/sw3nlab/sml482hd/tree/master/Jessie_update
 
 После установки нужно установить пакет `ntp` для синхронизации времени
 ```php
-SML@debian#apt-get install ntp
+SML@debian#apt-get install ntp ntpdate
+SML@debian#service ntp stop
 SML@debian#ln -sf /usr/share/zoneinfo/Europe/Moscow /etc/localtime
+SML@debian#ntpdate NTP_SERVER_IP
+SML@debian#service ntp start
 SML@debian#date
 ```
 
