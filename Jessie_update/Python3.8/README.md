@@ -18,7 +18,24 @@ make install
 - Сборка `Python3.8.12`
 
 ```php
-
-6666
-
+apt-get install build-essential checkinstall
+apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev \
+    libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev libffi-dev zlib1g-dev
+cd /opt
+wget https://www.python.org/ftp/python/3.8.12/Python-3.8.12.tgz
+tar -xf Python-3.8.12.tgz
+cd Python-3.8.12
 ```
+
+далее необходимо раскоментировать модуль `ssl` в файле `Modules/Setup`
+
+```php
+204:# Socket module helper for SSL support; you must comment out the other
+205:# socket line above, and possibly edit the SSL variable:
+206:SSL=/usr/local/ssl
+207:_ssl _ssl.c \
+208:    -DUSE_SSL -I$(SSL)/include -I$(SSL)/include/openssl \
+209:    -L$(SSL)/lib -lssl -lcrypto
+```
+
+Проверить адреса библиотек `ssl` и в `Module/Setup` и в `LD_LIBRARY_PATH` 
