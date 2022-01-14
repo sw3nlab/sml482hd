@@ -39,3 +39,14 @@ cd Python-3.8.12
 ```
 
 Проверить адреса библиотек `ssl` и в `Module/Setup` и в `LD_LIBRARY_PATH` 
+
+и можно собирать Python
+
+```php
+./configure
+make altinstall
+```
+
+После сборки можно обновить `pip`
+
+`python3.8 -m pip install --upgrade pip`
