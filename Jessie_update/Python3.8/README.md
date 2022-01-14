@@ -12,4 +12,5 @@ make install
 ```
 
 так же необходимо добавить переменную окружения, с адресом установленного `openssl`
+
 `export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/ssl/lib`
