@@ -35,10 +35,13 @@ https://boinc.berkeley.edu/projects.php
 ### Пример регистрации в отечественном проекте https://gerasim.boinc.ru
 
 Регистриуемся и получаем токен:
+
 `#boinccmd --create_account https://gerasim.boinc.ru ololo@gmail.com my_superpassword my_superlogin`
 
 Добавляем проект в обработку:
+
 `#boinctui --project_attach https://gerasim.boinc.ru 983f234c78b1ff3245` 
 
 Запускаем псевдо-графический интерфейс для отслеживания прогресса вычислений:
+
 `#boinctui`
