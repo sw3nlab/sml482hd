@@ -17,6 +17,6 @@ https://boinc.berkeley.edu/projects.php
 
 
 
-`#boinccmd --run_benchmarks` <-- запуск тестов для определения вычислительных мощьностей
+`#boinccmd --run_benchmarks` <-- запуск тестов для определения вычислительных мощностей
 
 `#boinccmd --get_messages` <---- вывод сообщений boinc ядра
