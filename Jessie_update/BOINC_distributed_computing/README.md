@@ -31,7 +31,8 @@ https://boinc.berkeley.edu/projects.php
 `#boinccmd --project_attach URL_проекта token` <-- добавление проекта к списку
 
 
-Пример регистрации в отечественном проекте https://gerasim.boinc.ru
+
+### Пример регистрации в отечественном проекте https://gerasim.boinc.ru
 
 Регистриуемся и получаем токен:
 `#boinccmd --create_account https://gerasim.boinc.ru ololo@gmail.com my_superpassword my_superlogin`
