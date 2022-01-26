@@ -4,7 +4,7 @@
 
 ![image](https://github.com/sw3nlab/sml482hd/blob/master/2010-01-01-043528_720x576_scrot.png)
 
-Вариант (1):
+### Вариант (1):
 
 <details>
 
@@ -74,7 +74,7 @@ sudo cp -a * /media/USER/FLASH_DRIVE_EXT2
 </details>
 
 
-Вариант (2):
+### Вариант (2):
 <details>
   <summary> <b> Загрузка по сети (с ядром zImage) / Boot from Lan (zImage kernel) </b> </summary>
 
@@ -183,13 +183,13 @@ apt-get install prboom
   
 </details>
 
-Сборка собственного ядра / Cross compile from source:
+- Сборка собственного ядра / Cross compile from source:
 https://github.com/sw3nlab/sml482hd/tree/master/manual_kernel_cross_compile
 
-Обновление до Debian Jessie / Jessie Update: <br/>
+- Обновление до Debian Jessie / Jessie Update: <br/>
 https://github.com/sw3nlab/sml482hd/tree/master/Jessie_update
 
-Научные распределённые вычисления на ТВ-приставке: <br/>
+- Научные распределённые вычисления на ТВ-приставке: <br/>
 https://github.com/sw3nlab/sml482hd/tree/master/Jessie_update/Distributed_computing
 
 После установки нужно установить пакет `ntp` для синхронизации времени
