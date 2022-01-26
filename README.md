@@ -189,6 +189,9 @@ https://github.com/sw3nlab/sml482hd/tree/master/manual_kernel_cross_compile
 Обновление до Debian Jessie / Jessie Update: <br/>
 https://github.com/sw3nlab/sml482hd/tree/master/Jessie_update
 
+Распределённые вычисления: <br/>
+https://github.com/sw3nlab/sml482hd/tree/master/Jessie_update/Distributed_computing
+
 После установки нужно установить пакет `ntp` для синхронизации времени
 ```php
 SML@debian#apt-get install ntp ntpdate
