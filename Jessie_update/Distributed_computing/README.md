@@ -1,3 +1,18 @@
+Для того чтобы принять участие в распределённых вычислениях на площадке: https://www.distributed.net/
+> Одним из исследований 
+> подробнее: 
+
+Забираем клиента/распакрвываем/смотрим хэлп/делаем бенчмарки/конфигурируем:
+```php
+wget http://http.distributed.net/pub/dcti/current-client/dnetc-linux-mips32el.tar.gz
+tar -xf dnetc-linux-mips32el.tar.gz
+./dnetc --help
+./dnetc -benchmark
+./dnetc -config
+./dnetc
+```
+
+
 Для того чтобы заставить TV-приставку `SML482HD` принять участие в распределённых вычислениях на платформе `BOINC`
 нужно:
 
