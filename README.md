@@ -183,15 +183,6 @@ apt-get install prboom
   
 </details>
 
-- Сборка собственного ядра / Cross compile from source:
-https://github.com/sw3nlab/sml482hd/tree/master/manual_kernel_cross_compile
-
-- Обновление до Debian Jessie / Jessie Update: <br/>
-https://github.com/sw3nlab/sml482hd/tree/master/Jessie_update
-
-- Научные распределённые вычисления на ТВ-приставке: <br/>
-https://github.com/sw3nlab/sml482hd/tree/master/Jessie_update/Distributed_computing
-
 После установки нужно установить пакет `ntp` для синхронизации времени
 ```php
 SML@debian#apt-get install ntp ntpdate
@@ -206,7 +197,16 @@ SML@debian#date
 >`update-ca-certificates --fresh`
 
 
-Вопросы/Предложения:<br/>
+- Сборка собственного ядра / Cross compile from source:
+https://github.com/sw3nlab/sml482hd/tree/master/manual_kernel_cross_compile
+
+- Обновление до Debian Jessie / Jessie Update: <br/>
+https://github.com/sw3nlab/sml482hd/tree/master/Jessie_update
+
+- Научные распределённые вычисления на ТВ-приставке: <br/>
+https://github.com/sw3nlab/sml482hd/tree/master/Jessie_update/Distributed_computing
+
+- Вопросы/Предложения:<br/>
 https://discord.com/invite/vcUt6kP
 
 >Донаты направляйте в благотворительные организации в вашей локации... =)
