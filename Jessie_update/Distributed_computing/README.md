@@ -1,3 +1,5 @@
+### ====== DISTRIBUTED.NET ======
+
 SML482HD может принять участие в распределённых вычислениях на площадке:
 
 https://www.distributed.net/
@@ -26,6 +28,8 @@ tar -xf dnetc-linux-mips32el.tar.gz
 ./dnetc -config
 ./dnetc
 ```
+
+### ======= BOINC =======
 
 <details>
   <summary>Распределённые вычисления на платформе BOINC `(на 26.01.2022 нет заданий для устройств с mips архитектурой)`</summary>
