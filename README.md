@@ -194,8 +194,9 @@ SML@debian#date
 ```
 
 и обновить сертификаты :
->`update-ca-certificates --fresh`
+`update-ca-certificates --fresh`
 
+=========================
 
 - Сборка собственного ядра / Cross compile from source:
 https://github.com/sw3nlab/sml482hd/tree/master/manual_kernel_cross_compile
